@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Actuators little_endian="false" length="12">
+	<SimpleIntegerActuator device_id="leftmotor_speed" poly="0,2546.47909" signed="true" byte_offset="0" byte_length="2"/>
+	<SimpleIntegerActuator device_id="rightmotor_speed" poly="0,2546.47909" signed="true" byte_offset="2" byte_length="2"/>
+	<SimpleBitsActuator device_id="digital_output" byte_offset="6" byte_length="4" little_endian="true">
+		<Bit name="leftmotor_enable" index="0"/>
+		<Bit name="rightmotor_enable" index="1"/>
+		<Bit name="leftmotor_brake" index="2"/>
+		<Bit name="rightmotor_brake" index="3"/>
+		<Bit name="charge_enable" index="7"/>
+		<Bit name="redlight" index="8"/>
+		<Bit name="greenlight" index="9"/>
+		<Bit name="yellowlight" index="10"/>
+		<Bit name="beeper" index="11"/>
+		<Bit name="laser_out1" index="16"/>
+		<Bit name="laser_out2" index="17"/>
+		<Bit name="led" index="18"/>
+		<Bit name="camera_synch" index="19"/>
+	</SimpleBitsActuator>
+	<SimpleBitsActuator device_id="cmd_code" byte_offset="10" byte_length="2" little_endian="true">
+		<Bit name="open_brake" index ="0"/>
+		<Bit name="take_control" index ="1"/>
+		<Bit name="init" index ="9" />
+	</SimpleBitsActuator>
+</Actuators>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MCUCommunication>
+	<SerialPort port="/dev/ttyS0"/>
+	<SenderProtocol fixed_length="false" little_endian="false" max_length="255">
+		<head password="170"/>
+		<size byte_offset="1" byte_length="1"/>
+		<vn_crc16/>
+		<tail password="85"/>
+	</SenderProtocol>
+	<RecieverProtocol fixed_length="false" little_endian="false" max_length="255">
+		<head password="170"/>
+		<size byte_offset="1" byte_length="1"/>
+		<vn_crc16 />
+		<tail password="85"/>
+	</RecieverProtocol>
+</MCUCommunication>

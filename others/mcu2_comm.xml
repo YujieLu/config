@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MCUCommunication>
+	<SerialPort port="/dev/ttyS2"/>
+	<Sender retry_attemp="10">
+		<Protocol fixed_length="false" little_endian="false">
+			<head password="170"/>
+			<size byte_offset="1" byte_length="2"/> 
+			<vn_crc16 byte_offset="13"/>
+			<tail byte_offset="15" password="85"/>
+		</Protocol>
+	</Sender>
+	<Reciever>
+		<Protocol fixed_length="false" little_endian="false">
+			<head password="170"/>
+			<size byte_offset="1" byte_length="2"/> 
+			<vn_crc16 byte_offset="13"/>
+			<tail byte_offset="15" password="85"/>
+		</Protocol>
+	</Reciever>		
+</MCUCommunication>

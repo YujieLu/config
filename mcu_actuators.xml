@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Actuators little_endian="false" length="12">
+	<SimpleIntegerActuator device_id="leftmotor_speed" poly="0,2546.47909" signed="true" byte_offset="0" byte_length="2"/>
+	<SimpleIntegerActuator device_id="rightmotor_speed" poly="0,2546.47909" signed="true" byte_offset="2" byte_length="2"/>
+	<SimpleBitsActuator device_id="dosignal_original" byte_offset="6" byte_length="4" little_endian="true">
+		
+	</SimpleBitsActuator>
+	<SimpleBitsActuator device_id="dosignal_motordriver" byte_offset="6" byte_length="4" little_endian="true">
+		<Bit name="leftmotor_enable" index="0"/>
+		<Bit name="rightmotor_enable" index="1"/>
+		<Bit name="leftmotor_brake" index="2"/>
+		<Bit name="rightmotor_brake" index="3"/>
+	</SimpleBitsActuator>
+
+	<SimpleBitsActuator device_id="dosignal_lasers" byte_offset="6" byte_length="4" little_endian="true">
+		<Bit name="laser_out1" index="0"/>
+		<Bit name="laser_out2" index="1"/>
+	</SimpleBitsActuator>
+
+	<SimpleBitsActuator device_id="dosignal_light" byte_offset="6" byte_length="4" little_endian="true">
+		<Bit name="light_red" index="0"/>
+		<Bit name="light_green" index="1"/>
+		<Bit name="light_yellow" index="2"/>
+		<Bit name="beeper" index="3"/>
+	</SimpleBitsActuator>
+
+	<SimpleBitsActuator device_id="dosignal_camera" byte_offset="6" byte_length="4" little_endian="true">
+		<Bit name="camera_synch" index="0"/>
+		<Bit name="led" index="2"/>
+	</SimpleBitsActuator>
+
+	<SimpleBitsActuator device_id="dosignal_others" byte_offset="6" byte_length="4" little_endian="true">
+		
+		<Bit name="charge_enable" index="1"/>
+	</SimpleBitsActuator>
+
+	<SimpleBitsActuator device_id="dosignal_cmd" byte_offset="10" byte_length="4" little_endian="true">
+		<Bit name="open_brake" index ="6"/>
+		<Bit name="init" index ="7" />
+		<Bit name="take_control" index ="8"/>
+	</SimpleBitsActuator>
+	<SimpleIntegerActuator device_id="last_stamp"  byte_offset="0" byte_length="4"/>
+</Actuators>

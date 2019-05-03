@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Actuators little_endian="false" length="78">
+	<SimpleIntegerActuator device_id="left_encoder" signed="true" byte_offset="0" byte_length="4"/>
+	<SimpleIntegerActuator device_id="right_encoder" signed="true" byte_offset="4" byte_length="4"/>
+	<SimpleIntegerActuator device_id="gyro" signed="true" byte_offset="8" byte_length="2"/>
+	<SimpleIntegerActuator device_id="accelerator" signed="true" byte_offset="10" byte_length="2"/>
+	<SimpleBitsActuator device_id="digital_input" byte_offset="16" byte_length="4">
+		<Bit name="emergency_stop" index="0"/>
+		<Bit name="remote_emergency_stop" index="1"/>
+		<Bit name="right_motor_error" index="2"/>
+		<Bit name="left_motor_error" index="3"/>
+		<Bit name="laser_input_1" index="4"/>
+		<Bit name="laser_input_2" index="5"/>
+		<Bit name="laser_input_3" index="6"/>
+		<Bit name="laser_input_4" index="7"/>
+		<Bit name="turn_left" index="8"/>
+		<Bit name="turn_right" index="9"/>
+		<Bit name="move_forward" index="10"/>
+		<Bit name="move_backward" index="11"/>
+		<Bit name="reset" index="12"/>
+		<Bit name="left_up" index="13"/>
+		<Bit name="left_down" index="14"/>
+		<Bit name="right_up" index="15"/>
+		<Bit name="right_down" index="16"/>
+		<Bit name="ultrasound1" index="17"/>
+		<Bit name="ultrasound2" index="18"/>
+		<Bit name="ultrasound3" index="19"/>
+		<Bit name="ultrasound4" index="20"/>
+		<Bit name="ultrasound5" index="21"/>
+		<Bit name="ultrasound6" index="22"/>
+		<Bit name="ultrasound7" index="23"/>
+	</SimpleBitsActuator>
+	<SimpleBitsActuator device_id="error_code" byte_offset="20" byte_length="2">
+		<Bit name="safety_lock" index ="0" />
+		<Bit name="connnection_lost" index ="1" />
+		<Bit name="init_fail" index ="9" />
+	</SimpleBitsActuator>
+	<SimpleIntegerActuator device_id="left_motor_voltage" byte_offset="22" byte_length="2"/>
+	<SimpleIntegerActuator device_id="left_motor_current" byte_offset="26" byte_length="2"/>
+	<SimpleIntegerActuator device_id="right_motor_voltage" byte_offset="24" byte_length="2"/>
+	<SimpleIntegerActuator device_id="right_motor_current" byte_offset="28" byte_length="2"/>
+	<SimpleIntegerActuator device_id="down_cam_stamp" byte_offset="66" byte_length="4"/>
+	<SimpleIntegerActuator device_id="up_cam_stamp" byte_offset="70" byte_length="4"/>
+	<SimpleIntegerActuator device_id="stamp" byte_offset="74" byte_length="4"/>
+</Actuators>

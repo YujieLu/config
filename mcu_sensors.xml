@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Sensors little_endian="false" length="78">
+	<SimpleIntegerSensor device_id="left_encoder" poly="0,0.0000057524" signed="true" byte_offset="0" byte_length="4"/>
+	<SimpleIntegerSensor device_id="right_encoder" poly="0,0.0000057524" signed="true" byte_offset="4" byte_length="4"/>
+	<SimpleIntegerSensor device_id="gyro" poly="0,0.0001745329252" signed="true" byte_offset="8" byte_length="2"/>
+	<SimpleIntegerSensor device_id="accelerator_x" poly="0,0.0098" signed="true" byte_offset="10" byte_length="2"/>
+	<SimpleIntegerSensor device_id="accelerator_y" poly="0,0.0098" signed="true" byte_offset="12" byte_length="2"/>
+	<SimpleIntegerSensor device_id="accelerator_z" poly="0,0.0098" signed="true" byte_offset="14" byte_length="2"/>
+	
+	<!--<SimpleBitsSensor device_id="disignal_original" byte_offset="16" byte_length="4" little_endian="true">
+	</SimpleBitsSensor>-->
+
+	<SimpleBitsSensor device_id="disignal_buttons" byte_offset="16" byte_length="4" little_endian="true">
+		<Bit name="emergency_stop" index="0"/>
+		<Bit name="reset" index="2"/>
+		<Bit name="move_forward" index="7"/>
+		<Bit name="move_backward" index="8"/>
+		<Bit name="turn_left" index="9"/>
+		<Bit name="turn_right" index="10"/>
+	</SimpleBitsSensor>
+
+	<SimpleBitsSensor device_id="disignal_lasers" byte_offset="16" byte_length="4" little_endian="true">
+		<Bit name="front_laser_close" index="0"/>
+		<Bit name="front_input_medium" index="1"/>
+		<Bit name="front_input_far" index="2"/>
+		<Bit name="front_input_breakdown" index="3"/>
+	</SimpleBitsSensor>
+
+	<SimpleBitsSensor device_id="disignal_collisions" byte_offset="16" byte_length="4" little_endian="true">
+		<Bit name="ultrasound1" index="0"/>
+		<Bit name="ultrasound2" index="1"/>
+		<Bit name="ultrasound3" index="2"/>
+		<Bit name="ultrasound4" index="3"/>
+		<Bit name="ultrasound5" index="4"/>
+		<Bit name="ultrasound6" index="5"/>
+		<Bit name="ultrasound7" index="6"/>
+	</SimpleBitsSensor>
+
+	<!--<SimpleBitsSensor device_id="disignal_limitations" byte_offset="16" byte_length="4" little_endian="true">
+	</SimpleBitsSensor>-->
+	
+	<SimpleBitsSensor device_id="disignal_motordriver" byte_offset="16" byte_length="4" little_endian="true">
+		<Bit name="motererror_left" index="0"/>
+		<Bit name="motererror_right" index="1"/>
+	</SimpleBitsSensor>
+
+	<SimpleBitsSensor device_id="disignal_mcustatus" byte_offset="16" byte_length="4" little_endian="true">
+		<Bit name="init_fail" index="1"/>
+		<Bit name="gyro_init_fail" index="3"/>
+		<Bit name="connection_lost" index="4"/>
+		<Bit name="safety_lock" index ="6" />
+	</SimpleBitsSensor>
+
+	<!--<SimpleBitsSensor device_id="iosignal_others" byte_offset="20" byte_length="4" little_endian="true">
+	</SimpleBitsSensor>-->
+	<SimpleIntegerSensor device_id="battery_voltage" poly="0,0.1" byte_offset="22" byte_length="4"/>
+	<SimpleIntegerSensor device_id="battery_current"  poly="0,0.01" byte_length="4"/>
+\	<SimpleIntegerSensor device_id="battery_percentage" poly="0,0.01" byte_length="4"/>
+	<SimpleIntegerSensor device_id="right_motor_voltage" poly="0,0.1" byte_offset="24" byte_length="2"/>
+	<SimpleIntegerSensor device_id="right_motor_current" poly="0,0.01" byte_offset="28" byte_length="2"/>
+	<SimpleIntegerSensor device_id="angular_velocity_x" signed="true" poly="0,0.0001745329252" byte_offset="30" byte_length="2"/>
+	<SimpleIntegerSensor device_id="angular_velocity_y" signed="true" poly="0,0.0001745329252" byte_offset="32" byte_length="2"/>
+
+	<SimpleIntegerSensor device_id="angular_velocity_z" signed="true" poly="0,0.0001745329252" byte_offset="34" byte_length="2"/>
+	<SimpleIntegerSensor device_id="roll" poly="0,0.0001745329252" signed="true" byte_offset="36" byte_length="2"/>
+	<SimpleIntegerSensor device_id="pitch" poly="0,0.0001745329252" signed="true" byte_offset="38" byte_length="2"/>
+
+	<SimpleIntegerSensor device_id="down_cam_stamp" byte_offset="66" byte_length="4"/>
+	<SimpleIntegerSensor device_id="up_cam_stamp" byte_offset="70" byte_length="4"/>
+	<SimpleIntegerSensor device_id="stamp" byte_offset="74" byte_length="4"/>
+	<SimpleIntegerSensor device_id="last_stamp" byte_offset="74" byte_length="4"/>
+</Sensors>

@@ -1,0 +1,208 @@
+{
+    "request_id": "20",
+    "task": {
+        "type": "group",
+        "title": "123a",
+        "id": "0",
+        "params": {
+            "tasks": [
+                {
+                    "type": "single",
+                    "title": " go A",
+                    "id": "2",
+                    "params": {
+                        "subtasks": [
+                            {
+                                "type": "move",
+                                "params": {
+                                    "coord": "global",
+                                    "pose": {
+                                        "x": "0.213547945023",
+                                        "y": "-5.00033283234",
+                                        "theta": "0"
+                                    },
+                                    "max_velocity": {
+                                        "forward": "1.2",
+                                        "backward": "0.3"
+                                    },
+                                    "stop_threshold": {
+                                        "distance": "0.05",
+                                        "angle": "0.05"
+                                    },
+                                    "area": [
+                                        {
+                                            "x": "-0.5",
+                                            "y": "-0.5"
+                                        },
+                                        {
+                                            "x": "0.5",
+                                            "y": "-0.5"
+                                        },
+                                        {
+                                            "x": "0.5",
+                                            "y": "0.5"
+                                        },
+                                        {
+                                            "x": "-0.5",
+                                            "y": "0.5"
+                                        }
+                                    ],
+                                    "path": [
+                                        "asd"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "single",
+                    "title": "go B",
+                    "id": "3",
+                    "params": {
+                        "subtasks": [
+                            {
+                                "type": "move",
+                                "params": {
+                                    "coord": "global",
+                                    "pose": {
+                                        "x": "0.433082193136",
+                                        "y": "-11.5381031036",
+                                        "theta": "0"
+                                    },
+                                    "max_velocity": {
+                                        "forward": "-1.2",
+                                        "backward": "0.3"
+                                    },
+                                    "stop_threshold": {
+                                        "distance": "0.05",
+                                        "angle": "-0.05"
+                                    },
+                                    "area": [
+                                        {
+                                            "x": "-0.5",
+                                            "y": "-0.5"
+                                        },
+                                        {
+                                            "x": "0.5",
+                                            "y": "-0.5"
+                                        },
+                                        {
+                                            "x": "0.5",
+                                            "y": "0.5"
+                                        },
+                                        {
+                                            "x": "-0.5",
+                                            "y": "0.5"
+                                        }
+                                    ],
+                                    "path": [
+                                        "asd"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "single",
+                    "title": "go C",
+                    "id": "4",
+                    "params": {
+                        "subtasks": [
+                            {
+                                "type": "move",
+                                "params": {
+                                    "coord": "global",
+                                    "pose": {
+                                        "x": "4.30269384384",
+                                        "y": "-17.6944465637",
+                                        "theta": "0"
+                                    },
+                                    "max_velocity": {
+                                        "forward": "1.2",
+                                        "backward": "-0.3"
+                                    },
+                                    "stop_threshold": {
+                                        "distance": "-0.05",
+                                        "angle": "0.05"
+                                    },
+                                    "area": [
+                                        {
+                                            "x": "-0.5",
+                                            "y": "-0.5"
+                                        },
+                                        {
+                                            "x": "0.5",
+                                            "y": "-0.5"
+                                        },
+                                        {
+                                            "x": "0.5",
+                                            "y": "0.5"
+                                        },
+                                        {
+                                            "x": "-0.5",
+                                            "y": "0.5"
+                                        }
+                                    ],
+                                    "path": [
+                                        "asd"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "single",
+                    "title": "go D",
+                    "id": "4",
+                    "params": {
+                        "subtasks": [
+                            {
+                                "type": "move",
+                                "params": {
+                                    "coord": "global",
+                                    "pose": {
+                                        "x": "5.86413288116",
+                                        "y": "-10.1962928772",
+                                        "theta": "0"
+                                    },
+                                    "max_velocity": {
+                                        "forward": "1.2",
+                                        "backward": "-0.3"
+                                    },
+                                    "stop_threshold": {
+                                        "distance": "-0.05",
+                                        "angle": "0.05"
+                                    },
+                                    "area": [
+                                        {
+                                            "x": "-0.5",
+                                            "y": "-0.5"
+                                        },
+                                        {
+                                            "x": "0.5",
+                                            "y": "-0.5"
+                                        },
+                                        {
+                                            "x": "0.5",
+                                            "y": "0.5"
+                                        },
+                                        {
+                                            "x": "-0.5",
+                                            "y": "0.5"
+                                        }
+                                    ],
+                                    "path": [
+                                        "asd"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}
