@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Actuators little_endian="false" length="12">
-	<SimpleIntegerActuator device_id="leftmotor_speed" poly="0,2546.47909" signed="true" byte_offset="0" byte_length="2"/>
-	<SimpleIntegerActuator device_id="rightmotor_speed" poly="0,2546.47909" signed="true" byte_offset="2" byte_length="2"/>
-	<SimpleBitsActuator device_id="dosignal_original" byte_offset="6" byte_length="4" little_endian="true">
-		
+	<SimpleIntegerActuator device_id="leftmotor_speed" description="左电机速度" poly="0,2546.47909" signed="true" byte_offset="0" byte_length="2"/>
+	<SimpleIntegerActuator device_id="rightmotor_speed" description="右电机速度" poly="0,2546.47909" signed="true" byte_offset="2" byte_length="2"/>
+	<SimpleBitsActuator device_id="dosignal_original" byte_offset="6" byte_length="4" little_endian="true">	
 	</SimpleBitsActuator>
+
 	<SimpleBitsActuator device_id="dosignal_motordriver" byte_offset="6" byte_length="4" little_endian="true">
-		<Bit name="leftmotor_enable" index="0"/>
-		<Bit name="rightmotor_enable" index="1"/>
-		<Bit name="leftmotor_brake" index="2"/>
-		<Bit name="rightmotor_brake" index="3"/>
+		<Bit name="leftmotor_enable" description="左电机使能" index="0"/>
+		<Bit name="rightmotor_enable" description="右电机使能" index="1"/>
+		<Bit name="leftmotor_brake" description="左电机刹车" index="2"/>
+		<Bit name="rightmotor_brake" description="右电机刹车" index="3"/>
 	</SimpleBitsActuator>
 
 	<SimpleBitsActuator device_id="dosignal_lasers" byte_offset="6" byte_length="4" little_endian="true">
@@ -18,26 +18,26 @@
 	</SimpleBitsActuator>
 
 	<SimpleBitsActuator device_id="dosignal_light" byte_offset="6" byte_length="4" little_endian="true">
-		<Bit name="light_red" index="0"/>
-		<Bit name="light_green" index="1"/>
-		<Bit name="light_yellow" index="2"/>
-		<Bit name="beeper" index="3"/>
+		<Bit name="light_red" description="红灯" index="0"/>
+		<Bit name="light_green" description="绿灯" index="1"/>
+		<Bit name="light_yellow" description="黄灯" index="2"/>
+		<Bit name="beeper" description="蜂鸣器" index="3"/>
 	</SimpleBitsActuator>
 
 	<SimpleBitsActuator device_id="dosignal_camera" byte_offset="6" byte_length="4" little_endian="true">
-		<Bit name="camera_synch" index="0"/>
-		<Bit name="led" index="2"/>
+		<Bit name="camera_synch" description="相机同步" index="0"/>
+		<Bit name="led" description="补光灯" index="2"/>
 	</SimpleBitsActuator>
 
 	<SimpleBitsActuator device_id="dosignal_others" byte_offset="6" byte_length="4" little_endian="true">
 		
-		<Bit name="charge_enable" index="1"/>
+		<Bit name="charge_enable" description="充电使能" index="1"/>
 	</SimpleBitsActuator>
 
 	<SimpleBitsActuator device_id="dosignal_cmd" byte_offset="10" byte_length="4" little_endian="true">
-		<Bit name="open_brake" index ="6"/>
-		<Bit name="init" index ="7" />
-		<Bit name="take_control" index ="8"/>
+		<Bit name="open_brake" description="抱闸解除" index ="6"/>
+		<Bit name="init" description="初始化" index ="7" />
+		<Bit name="take_control" description="上位机控制使能" index ="8"/>
 	</SimpleBitsActuator>
-	<SimpleIntegerActuator device_id="last_stamp"  byte_offset="0" byte_length="4"/>
+	<SimpleIntegerActuator device_id="last_stamp" description="时间戳" byte_offset="0" byte_length="4"/>
 </Actuators>
