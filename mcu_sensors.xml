@@ -24,6 +24,7 @@
 		<Bit name="front_input_medium" description="前激光中距" index="1"/>
 		<Bit name="front_input_far" description="前激光远距" index="2"/>
 		<Bit name="front_input_breakdown" description="前激光故障"  index="3"/>
+		<Bit name="laser_synchronziation" description="激光同步信号"  index="12"/>
 	</SimpleBitsSensor>
 
 	<SimpleBitsSensor device_id="disignal_collisions" byte_offset="16" byte_length="4" little_endian="true">
